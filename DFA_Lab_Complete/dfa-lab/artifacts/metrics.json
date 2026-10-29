@@ -1,0 +1,137 @@
+{
+  "seed": 42,
+  "architecture": "character RNN, 12 tanh hidden units, sigmoid output",
+  "parameters": 193,
+  "threshold": 0.5,
+  "training_lengths": [
+    0,
+    24
+  ],
+  "epochs": 15,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.3897974651287138,
+      "validation_loss": 0.13211107400784824
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.05032397149868682,
+      "validation_loss": 0.015890675416756497
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.010353647193005312,
+      "validation_loss": 0.006761180413317065
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.00546862839516911,
+      "validation_loss": 0.004148938268314481
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.003640488416379045,
+      "validation_loss": 0.002885747371170108
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.0026628682081662083,
+      "validation_loss": 0.0021557122485781123
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.002063901776469668,
+      "validation_loss": 0.0016720166491119043
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.001665555516336855,
+      "validation_loss": 0.0013427936543282362
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.001386314397111994,
+      "validation_loss": 0.001108880985594389
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.00118130855597949,
+      "validation_loss": 0.0009323328358777247
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.00106179128823234,
+      "validation_loss": 0.0007971519290880303
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.0009053658699698274,
+      "validation_loss": 0.0006915184547083387
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.0008086802200772459,
+      "validation_loss": 0.0006048904605305237
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.000730413703049616,
+      "validation_loss": 0.000535138545653802
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.0006660757811294699,
+      "validation_loss": 0.00047672554145557536
+    }
+  ],
+  "test": {
+    "count": 900,
+    "accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        446,
+        0
+      ],
+      [
+        0,
+        454
+      ]
+    ],
+    "matrix_order": "rows=true, columns=predicted; reject, accept",
+    "mismatches": []
+  },
+  "long_test": {
+    "count": 1000,
+    "accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        519,
+        0
+      ],
+      [
+        0,
+        481
+      ]
+    ],
+    "matrix_order": "rows=true, columns=predicted; reject, accept",
+    "mismatches": []
+  },
+  "exhaustive_0_to_10": {
+    "count": 2047,
+    "accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        1024,
+        0
+      ],
+      [
+        0,
+        1023
+      ]
+    ],
+    "matrix_order": "rows=true, columns=predicted; reject, accept",
+    "mismatches": []
+  },
+  "note": "Exhaustive set overlaps training. Test and long_test are held out. Accuracy is empirical, not proof."
+}
